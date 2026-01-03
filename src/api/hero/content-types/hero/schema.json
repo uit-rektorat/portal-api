@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "heroes",
+  "info": {
+    "singularName": "hero",
+    "pluralName": "heroes",
+    "displayName": "Slider"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "maxLength": 60,
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "maxLength": 80,
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 150
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "buttonLink": {
+      "type": "string"
+    },
+    "buttonSecondaryText": {
+      "type": "string"
+    },
+    "buttonSecondaryLink": {
+      "type": "string"
+    },
+    "layout": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "full-image",
+        "centered",
+        "minimal"
+      ]
+    }
+  }
+}

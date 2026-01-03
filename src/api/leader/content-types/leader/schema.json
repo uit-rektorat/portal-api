@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leaders",
+  "info": {
+    "singularName": "leader",
+    "pluralName": "leaders",
+    "displayName": "Pimpinan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "Rektor",
+        "Wakil Rektor I (Bidang Akademik)",
+        "Wakil Rektor II (Bidang Keuangan)",
+        "Wakil Rektor III (Bidang Kemahasiswaan)",
+        "Wakil Rektor IV (Bidang Kerjasama)"
+      ]
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "order": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
